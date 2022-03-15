@@ -10,8 +10,9 @@ Pod::Spec.new do |spec|
 
   spec.name         = "FPhiApiManager"
   spec.version      = "$VERSION_RELEASE"
+  spec.swift_version = '4.0'
   spec.summary      = "Component for OCR and liveness test"
-  spec.ios.deployment_target  = "10.0"
+  spec.ios.deployment_target  = "13.0"
   spec.static_framework = true
 
   spec.description  = <<-DESC
