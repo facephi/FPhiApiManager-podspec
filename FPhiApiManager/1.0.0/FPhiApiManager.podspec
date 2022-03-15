@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
               }
 
   spec.author             = { "Facephi" => "developer@facephi.com" }
-  spec.source       = { :git => "https://github.com/facephi/selphid-framework.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/facephi/FPhiApiManager-podspec.git", :tag => "#{spec.version}" }
 
   
   spec.ios.vendored_frameworks = "ApiManager.xcframework"
