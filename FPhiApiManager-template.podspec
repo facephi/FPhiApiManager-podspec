@@ -28,13 +28,14 @@ Pod::Spec.new do |spec|
   spec.author             = { "Facephi" => "developer@facephi.com" }
   spec.source       = { :git => "https://github.com/facephi/FPhiApiManager-podspec.git", :tag => "#{spec.version}" }
 
-  
-  spec.ios.vendored_frameworks = "ApiManager.xcframework"
+  #spec.ios.resources = "fphi-selphid-widget-resources-selphid-1.0.zip"
+  spec.ios.vendored_frameworks = 'ApiManager.xcframework'
 
   # Removed architecture for simulator
 
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  spec.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   # Removed architecture for device
   
@@ -42,5 +43,8 @@ Pod::Spec.new do |spec|
   spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
 
   spec.dependency 'OpenSSL-Universal', '~> 1.1.1300'
+
+  
+
 
 end
