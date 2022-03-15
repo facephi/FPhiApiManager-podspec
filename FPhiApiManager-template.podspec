@@ -15,8 +15,9 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = "13.0"
   spec.static_framework = true
 
-  spec.description  = <<-DESC
-  Safe digital onboarding solution with the best real time OCR in the market with facial liveness test.
+  spec.description = <<-DESC
+Library that provides an easy-to-use, scalable network layer
+
   DESC
   spec.homepage     = "https://www.facephi.com"
   spec.license = { :type => "Commercial", 
@@ -42,7 +43,8 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
   spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
 
-  spec.dependency 'OpenSSL-Universal', '~> 1.1.1300'
+spec.dependency 'JWTDecode', '~> 2.6'
+
 
   
 
