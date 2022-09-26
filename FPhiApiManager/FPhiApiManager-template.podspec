@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   
   spec.summary      = "Component for OCR and liveness test"
   spec.ios.deployment_target  = "13.0"
-  spec.static_framework = true
+  
 
   spec.description = <<-DESC
 Library that provides an easy-to-use, scalable network layer
